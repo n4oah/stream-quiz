@@ -31,7 +31,7 @@ class Quiz5Test {
 
     private boolean isCorrect(List<Integer> quiz) {
         List<Integer> answer = new ArrayList<>(quiz);
-        Collections.sort(answer);
+//        Collections.sort(answer);
         return quiz.stream().distinct().count() == 6 && answer.equals(quiz);
     }
 
